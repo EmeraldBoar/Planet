@@ -1,0 +1,37 @@
+header.main-header
+      .container.main-header__wrapper
+        .logo.main-header__logo
+          a.logo__link(href="index.html")
+            svg(width="28" height="28")
+              use(xlink:href="#logo")
+            b.logo__title.main-header__title Digital Planet
+        .main-header__info
+          button.button.main-header__button Заказать
+          a.main-header__phone.main-header__phone--desktop(href="tel:+78005553575") 8 (800) 555 35 75
+        button.main-header__burger
+        .main-header__menu
+          nav.main-navigation
+            ul.main-navigation__list.main-header__menu-list
+              li.main-navigation__item.main-header__menu-item.main-header__menu-item--hidden
+                a.main-navigation__link(href="#") Главная
+              li.main-navigation__item.main-header__menu-item
+                a.main-navigation__link(href="#") О продукте
+              li.main-navigation__item.main-header__menu-item
+                a.main-navigation__link(href="#") Как работает
+              li.main-navigation__item.main-header__menu-item
+                a.main-navigation__link(href="#") Технология
+              li.main-navigation__item.main-header__menu-item
+                a.main-navigation__link(href="#") Вопросы
+              li.main-navigation__item.main-header__menu-item
+                a.main-navigation__link(href="#") Контакты
+          .main-header__contacts
+            a.main-header__phone(href="tel:+78005553575") 8 (800) 555 35 75
+            ul.socials.main-header__socials
+              li.socials__item
+                a.socials__link(href="")
+                  svg(width="11" height="22")
+                    use(xlink:href="#icon-fc")
+              li.socials__item
+                a.socials__link(href="")
+                  svg(width="28" height="15")
+                    use(xlink:href="#icon-vk")

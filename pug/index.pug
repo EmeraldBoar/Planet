@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+html(lang="ru_RU")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Детский VR планетарий
+    link(rel="stylesheet", href="css/style.min.css")
+  body
+  div(style="display: none")
+      include ../build/img/symbol/sprite.svg
+  .main-background
+    include blocks/header
+    main.page-main
+      section.hero
+        .container.hero_wrapper
+          .hero__info
+            h1.hero__title Digital Planet VR
+            p.hero__text
+              |Образовательный виртуальный планетарий в Новороссийске. Познавательное приключение в&nbsp;мир&nbsp;звёзд и галактик.
+            button.hero__button.hero__button--fill
+              svg(width="25" height="25")
+                use(xlink:href="#icon-ticket")
+              span Заказать
+            button.hero__button
+              svg(width="25" height="25")
+                use(xlink:href="#icon-video")
+              span  Видео
+          .scroll.hero__scroll
+            ul.socials.hero__socials
+                li.socials__item
+                  a.socials__link(href="")
+                    svg(width="11" height="22")
+                      use(xlink:href="#icon-fc")
+                li.socials__item
+                  a.socials__link(href="")
+                    svg(width="28" height="15")
+                      use(xlink:href="#icon-vk")
+            a.scroll__link(href="product.html") Скролл вниз

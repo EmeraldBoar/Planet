@@ -1,0 +1,39 @@
+.product__container {
+  padding-top: 47px;
+}
+
+.product__wrapper {
+  margin-bottom: 50px;
+}
+
+.product__title {
+  margin: 0;
+  margin-bottom: 48px;
+  padding-bottom: 5px;
+  font-size: 28px;
+  line-height: 32px;
+  font-weight: 500;
+  border-bottom: 3px solid $primary-color;
+}
+
+.product__description {
+  margin: 0;
+  margin-bottom: 34px;
+  font-size: 17px;
+  line-height: 25px;
+  font-weight: 300;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.product__images {}
+
+.product__subtitle {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 500;
+}
+
+.product__slider {}

@@ -1,0 +1,26 @@
+.socials {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.socials__item {
+  margin-right: 23px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.socials__link svg {
+  fill: rgba(255, 255, 255, 0.64);
+  transition-property: fill;
+  transition-duration: 500ms;
+}
+
+.socials__link:hover svg,
+.socials__link:focus svg {
+  fill: rgba(255, 255, 255, 1);
+}

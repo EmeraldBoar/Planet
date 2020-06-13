@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-size: 15px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 300;
+  color: #ffffff;
+  background-image: url('../img/image-bg-main-mobile.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position-x: center;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0, 0, 0, 0);
+  overflow: hidden;
+}
+
+
+.button {
+  padding: 9px 15px;
+  color: #ffffff;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 700;
+  background-color: transparent;
+  border: 2px solid $primary-color;
+  border-radius: 2px;
+  text-transform: uppercase;
+  transition-property: background-color;
+  transition-duration: 500ms;
+
+  &:hover,
+  &:focus {
+    background-color: $primary-color;
+  }
+}

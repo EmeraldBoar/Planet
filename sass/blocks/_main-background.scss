@@ -1,0 +1,34 @@
+.main-background {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.main-background::after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 100vh;
+  background-image: url("../img/image-bg-hero-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media (min-width: 768px) {
+  .main-background::after {
+    background-image: url("../img/image-bg-hero-desktop.jpg");
+  }
+}
+
+
+@media (min-width: $desktop-width) {
+  .main-background::after {
+    background-image: url("../img/image-bg-kid-hero.png"),
+      url("../img/image-bg-hero-desktop.jpg");
+    background-size: auto, cover;
+    background-position: bottom right;
+  }
+}

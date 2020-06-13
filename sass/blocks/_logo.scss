@@ -1,0 +1,38 @@
+$hover-color: $primary-color;
+$title-color: #ffffff;
+
+.logo__link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo__link svg {
+  position: relative;
+  margin-right: 17px;
+  fill: white;
+  transition-property: fill;
+  transition-duration: 500ms;
+  z-index: 1;
+}
+
+.logo__link:hover svg,
+.logo__link:focus svg {
+  fill: $hover-color;
+}
+
+.logo__title {
+  color: $title-color;
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 500;
+  text-transform: uppercase;
+  transition-property: color;
+  transition-duration: 500ms;
+}
+
+
+.logo__link:hover .logo__title,
+.logo__link:focus .logo__title {
+  color: $hover-color;
+}
