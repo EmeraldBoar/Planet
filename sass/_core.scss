@@ -15,10 +15,14 @@ img {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
   font-size: 15px;
   font-family: "Ubuntu", sans-serif;
   font-weight: 300;
   color: #ffffff;
+  background-color: #000000;
   background-image: url('../img/image-bg-main-mobile.png');
   background-repeat: no-repeat;
   background-size: cover;
@@ -56,5 +60,14 @@ body {
   &:hover,
   &:focus {
     background-color: $primary-color;
+  }
+}
+
+//! Media Querys
+//? 1366px
+
+@media (min-width: 768px) {
+  body {
+    background-image: url('../img/image-bg-main-desktop.png');
   }
 }

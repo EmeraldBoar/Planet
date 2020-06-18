@@ -3,6 +3,10 @@
   margin: 0 auto;
   padding: 0 16px;
 
+  @media (min-width: 768px) {
+    padding: 0 25px;
+  }
+
   @media (min-width: $desktop-width) {
     padding: 0 63px;
   }

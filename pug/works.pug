@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+html(lang="ru_RU")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Как это работает?
+    link(rel="stylesheet", href="css/style.min.css")
+  body
+  div(style="display: none")
+      include ../build/img/symbol/sprite.svg
+  include blocks/header
+  main.page-main
+    section.works
+      .container.works__container
+        h1.title.works__title Как это работает?
+        .slider.works__slider
+          ul.slider__wrapper.works__list
+            li.slider__item.works__item
+              .works__image
+                img(src="img/image-vr-mobile.jpg", alt="Очки виртуальной реальности")
+                span.works__number 1
+              .works__info
+                h2.works__info-title
+                  |Готовим
+                  br
+                  |инвентарь
+                p.works__info-description Наши специалисты готовят каждые VR-очки к использованию, обрабатывая устройства специальным средством для ухода после каждого сеанса.
+            li.slider__item.works__item
+              .works__image
+                img(src="img/image-tablet-mobile.jpg", alt="Планшет")
+                span.works__number 2
+              .works__info
+                h2.works__info-title Выбираем фильм
+                p.works__info-description В нашем архиве есть образовательные фильмы по теме космоса, астрологиии обществознания. Мы работаемс самым крупным производителем мультимедиа продуктов в РФ.
+            li.slider__item.works__item
+              .works__image
+                img(src="img/image-vrgirl-mobile-1.jpg", alt="Девушка в очках виртуальной реальности")
+                span.works__number 3
+              .works__info
+                h2.works__info-title Надеваем VR-очки
+                p.works__info-description Ученики получают VR-очки, наш техник помогает им разобраться как правильно надеть очки и закрепить их на голове.  Для ребят со зрением, отличным от 100%, техник настраивает диоптрии.
+            li.slider__item.works__item
+              .works__image
+                img(src="img/image-vrgirl-mobile-2.jpg", alt="Девушка в очках виртуальной реальности")
+                span.works__number 4
+              .works__info
+                h2.works__info-title Исследуем галактики!
+                p.works__info-description Ребята окунаются в виртуальные миры и с удовольтсием изучают всё вокруг.  После показа остаются яркие эмоции и запоминаются важные моменты  о планетах, звёздах и галактике.
+          .slider__control.works__control
+              p.slider__numbers
+                span.slider__current-number 01
+                span /
+                span.slider__total-number 04
+              .slider__buttons
+                button.slider__button.slider__button--prev
+                button.slider__button.slider__button--next
+      .scroll.works__scroll
+          a.scroll__link(href="works.html")
+
+
+

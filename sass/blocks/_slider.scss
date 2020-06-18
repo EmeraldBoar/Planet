@@ -2,9 +2,7 @@ $color-slider-arrow: #ffffff;
 
 .slider__wrapper {
   display: flex;
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  overflow: hidden;
 }
 
 .slider__control {

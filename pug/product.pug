@@ -3,27 +3,27 @@ html(lang="ru_RU")
   head
     meta(charset="UTF-8")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
-    title Детский VR планетарий
+    title Что такое VR-планетарий?
     link(rel="stylesheet", href="css/style.min.css")
   body
   div(style="display: none")
       include ../build/img/symbol/sprite.svg
   include blocks/header
-  main
+  main.page-main
     section.product
       .container.product__container
-        .product__wrapper
-          h1.product__title Что такое VR-&nbsp;планетарий?
+        .product__info
+          h1.title.product__title Что такое VR-&nbsp;планетарий?
           .product__description-wrapper
             p.product__description Это образовательная программа, использующая технологию виртуальной реальности.
             p.product__description Зрителям выдаются очки виртуальной реальности, оператор запускает сеанс планетария на всех очках одновременно. В коллекции фильмов идут обучающие картины о космосе, астрономии  и обществознании.
             p.product__description За счёт реалестичности  и имитации игры такое обучение повышает мотивацию и стимулирует активную мозговую деятельность ребёнка.
         .product__images
-          h2.product__subtitle Что показываем в планетарии
           .slider.product__slider
-            ul.slider__wrapper
-              li.slider__item
-                img.slider__image.product__image(src="img/image-cosmonaut.jpg", alt="Космонавт в космосе")
+            h2.product__subtitle Что показываем в планетарии
+            ul.slider__wrapper.product__list
+              li.slider__item.product__item
+                img.product__image(src="img/image-cosmonaut.jpg", alt="Космонавт в космосе")
             .slider__control
               p.slider__numbers
                 span.slider__current-number 01
@@ -32,4 +32,5 @@ html(lang="ru_RU")
               .slider__buttons
                 button.slider__button.slider__button--prev
                 button.slider__button.slider__button--next
-
+      .scroll.product__scroll
+          a.scroll__link(href="works.html")

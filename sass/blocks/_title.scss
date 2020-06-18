@@ -1,0 +1,16 @@
+.title {
+  margin: 0;
+  padding-bottom: 5px;
+  font-size: 28px;
+  line-height: 32px;
+  font-weight: 500;
+  border-bottom: 3px solid $primary-color;
+}
+
+
+@media (min-width: 768px) {
+  .title {
+    font-size: 44px;
+    line-height: 51px;
+  }
+}
