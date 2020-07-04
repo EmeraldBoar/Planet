@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+html(lang="ru_RU")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Детский VR планетарий
+    link(rel="stylesheet", href="css/style.min.css")
+  body
+  div(style="display: none")
+      include ../build/img/symbol/sprite.svg
+  include blocks/header
+  main.page-main
+    section.technology
+      .container.technology__container
+        h1.title.technology__title VR-технология
+        .slider.technology__slider
+          ul.slider__list.technology__list
+            li.slider__item.technology__item
+              .technology__image
+                img(src="img/image-vr-mobile.png", alt="VR-очки")
+              .technology__info
+                h2.technology__info-title Masters Glass VR-iii
+                p.technology__description Используем только оригинальные импортные VR-очки. Технологии протестированы и безопасны для глаз. Напряжение во время просмотра — как при прогулке за счёт качественного обёъмного  изображения.
+            li.slider__item.technology__item
+              .technology__image
+                img(src="img/image-vr-mobile.png", alt="VR-очки")
+              .technology__info
+                h2.technology__info-title Оборудование
+                p.technology__description Все фильмы воспроизводятся при помощи встроенных в очки экранов мобильных телефонов ведущих брендов. Наши техники привезут всё обордуование с собой: от вас нужно лишь помещение для урока.
+            li.slider__item.technology__item
+              .technology__image
+                img(src="img/image-vr-mobile.png", alt="VR-очки")
+              .technology__info
+                h2.technology__info-title Безопасность
+                p.technology__description Зритель всегда находится в центре зала, и четко зафиксирован в пространстве, что делает просмотр понятным и комфортным. Технология виртуальной реальности не портит зрение, а эффект присутсвтия развивает креативность и пространственное мышление.
+            li.slider__item.technology__item
+              .technology__image
+                img(src="img/image-vr-mobile.png", alt="VR-очки")
+              .technology__info
+                h2.technology__info-title Система крепления
+                p.technology__description подходит под любой размер головы, даже для первоклассника. Во время просмотра не получится навредить голове ребёнка за счёт тщательно проработанной конструкции очков.
+          .slider__control.technology__control
+              p.slider__numbers
+                span.slider__current-number 01
+                span /
+                span.slider__total-number 04
+              .slider__buttons
+                button.slider__button.slider__button--prev
+                button.slider__button.slider__button--next
+      .scroll.technology__scroll
+        a.scroll__link(href="works.html")

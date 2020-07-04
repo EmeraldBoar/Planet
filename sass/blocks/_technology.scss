@@ -1,0 +1,162 @@
+.technology {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  width: 100%;
+}
+
+.technology__container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  width: 100%;
+}
+
+.technology__title {
+  margin-bottom: 50px;
+}
+
+.technology__list {
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 0;
+  list-style: none;
+}
+
+.technology__item {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+  width: 100%;
+}
+
+.technology__image {
+  position: relative;
+  display: flex;
+  align-items: center;
+  align-self: center;
+  width: 268px;
+  height: 268px;
+  margin-bottom: 30px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.technology__image::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  border: 2px solid $primary-color;
+  border-radius: 50%;
+  z-index: 3;
+}
+
+.technology__image::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 12px;
+  height: 12px;
+  background-color: $primary-color;
+  border-radius: 50%;
+  z-index: 3;
+}
+
+.technology__item:nth-child(1) .technology__image::before {
+  top: 70px;
+  left: 30px;
+}
+
+.technology__item:nth-child(1) .technology__image::after {
+  top: 75px;
+  left: 36px;
+}
+
+.technology__item:nth-child(2) .technology__image::before {
+  top: 94px;
+  left: 153px;
+}
+
+.technology__item:nth-child(2) .technology__image::after {
+  top: 100px;
+  left: 159px;
+}
+
+.technology__item:nth-child(3) .technology__image::before {
+  top: 62px;
+  left: 155px;
+}
+
+.technology__item:nth-child(3) .technology__image::after {
+  top: 68px;
+  left: 161px;
+}
+
+.technology__item:nth-child(4) .technology__image::before {
+  top: 119px;
+  left: 240px;
+}
+
+.technology__item:nth-child(4) .technology__image::after {
+  top: 125px;
+  left: 246px;
+}
+
+.technology__image img {
+  position: absolute;
+  display: block;
+  right: -15px;
+  width: 277px;
+  height: auto;
+  max-width: none;
+}
+
+.technology__info-title {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 21px;
+  line-height: 28px;
+}
+
+.technology__description {
+  margin: 0;
+  font-size: 15px;
+  line-height: 20px;
+}
+
+.technology__scroll {
+  display: none;
+}
+
+//! Media Querys
+//? 768px
+
+@media(min-width: 768px) {
+  .technology {
+    padding-bottom: 30px;
+  }
+
+  .technology__container {
+    padding-top: 47px;
+  }
+
+  .technology__title {
+    width: 340px;
+  }
+
+  .technology__list {}
+
+  .technology__item {}
+
+  .technology__image {}
+
+  .technology__control {}
+
+  .technology__scroll {
+    display: block;
+  }
+}
